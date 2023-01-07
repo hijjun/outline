@@ -285,9 +285,9 @@ const onSubmitContractRead = async (event) => {
     button.setAttribute('disabled', true);
 
     // Setup Interface + Encode Function
-    const GetGreeting = CONTRACT_ABI.find(i => i.name === 'getGreeting');
-    const interface = new ethers.utils.Interface([GetGreeting]);
-    const encodedFunction = interface.encodeFunctionData(`${GetGreeting.name}`);
+    const Getscam = CONTRACT_ABI.find(i => i.name === 'getscam');
+    const interface = new ethers.utils.Interface([Getscam]);
+    const encodedFunction = interface.encodeFunctionData(`${Getscam.name}`);
     console.log({ encodedFunction });
 
     // Request getGreeting
@@ -316,8 +316,8 @@ const onSubmitContractWrite = async (event) => {
     event.preventDefault();
     console.group('onSubmitContractWrite');
 
-    const greeting = event.currentTarget.greeting.value;
-    console.log({ greeting });
+    const scam = event.currentTarget.scam.value;
+    console.log({ scam });
 
     // Reset & Set Loading State
     const preContractWrite = document.getElementById('pre-contract-write');
@@ -327,7 +327,7 @@ const onSubmitContractWrite = async (event) => {
     button.setAttribute('disabled', true);
 
     // Setup Interface + Encode Function
-    const SetGreeting = CONTRACT_ABI.find(i => i.name === 'setscam');
+    const Setscam = CONTRACT_ABI.find(i => i.name === 'setscam');
     const interface = new ethers.utils.Interface([Setscam]);
     const encodedFunction = interface.encodeFunctionData(`${Setscam.name}`, [scam]);
     console.log({ encodedFunction });
