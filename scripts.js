@@ -29,7 +29,7 @@ const CHAIN_DICTIONARY = {
 /**
  * Required chain to interact with contract
  */
-const CHAIN_ID_REQUIRED = 80001; //Mumbai
+const CHAIN_ID_REQUIRED = 5; //Goerli
 
 /**
  * Same contract deployed to each network
@@ -44,12 +44,7 @@ const CONTRACT_ON_CHAINS = {
  */
 const BLOCKCHAIN_EXPLORERS = {
     1: 'https://etherscan.io',
-    5: 'https://goerli.etherscan.io',
-    137: 'https://polygonscan.com',
-    1337: null,
-    1402: 'https://explorer.public.zkevm-test.net',
-    80001: 'https://mumbai.polygonscan.com',
-    11155111: 'https://sepolia.etherscan.io',
+    5: 'https://goerli.etherscan.io'
 };
 
 /**
